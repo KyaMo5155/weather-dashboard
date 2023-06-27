@@ -14,7 +14,7 @@ $(document).ready(function () {
     $(document).on("click", ".prvCity", function (e) {
         e.preventDefault();
         var cityName = $(this).attr("id");
-        var apiKey = "bee9b83d74fe093d1f288b853be1ab4d";
+        var apiKey = "a0d0074374281d5c081b58446dc44123";
         var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&cnt=5&units=imperial&appid=" + apiKey;
         $.ajax({
             url: queryURL,
@@ -27,7 +27,7 @@ $(document).ready(function () {
     searchBtn.on("click", function (e) {
         e.preventDefault();
         var cityName = $("#userInput").val();
-        var apiKey = "bee9b83d74fe093d1f288b853be1ab4d";
+        var apiKey = "a0d0074374281d5c081b58446dc44123";
         var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&cnt=5&units=imperial&appid=" + apiKey;
         $.ajax({
             url: queryURL,
@@ -53,7 +53,7 @@ $(document).ready(function () {
     };
 
     function findWithCoords(currentCityCoLat, currentCityCoLon) {
-        var apiKey = "bee9b83d74fe093d1f288b853be1ab4d";
+        var apiKey = "a0d0074374281d5c081b58446dc44123";
         var queryURL2 = "https://api.openweathermap.org/data/2.5/onecall?lat=" + currentCityCoLat + "&lon=" + currentCityCoLon + "&exclude=minutely,hourly&units=imperial&appid=" + apiKey;
         $.ajax({
             url: queryURL2,
@@ -158,7 +158,7 @@ $(document).ready(function () {
 
     function renderLastCity(lastCity) {
         var cityName = lastCity;
-        var apiKey = "bee9b83d74fe093d1f288b853be1ab4d";
+        var apiKey = "a0d0074374281d5c081b58446dc44123";
         var queryURL3 = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&cnt=5&units=imperial&appid=" + apiKey;
         $.ajax({
             url: queryURL3,
